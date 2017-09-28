@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h2 Sale ends in #{h.moment().endOf('day').fromNow()}
+  p Hello whats up how ya doin
+  - const upDog = dog.toUpperCase();
+  p.hello Hello! my dogs name is #{upDog}
+
+block footer
+  p I love you #{name} #{upDog}
